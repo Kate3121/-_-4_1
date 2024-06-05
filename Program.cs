@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace СПЗ_Лр4_1
 {
+    class Town
+    {
+        public string Name; public string Country; public string Region; public int
+        Population; public double YearIncome; public double Square; public bool HasPort;
+        public bool HasAirport;
+    
+        public double GetYearIncomePerInhabitant()
+        {
+            return YearIncome / Population;
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
